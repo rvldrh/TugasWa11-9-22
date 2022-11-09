@@ -1,0 +1,31 @@
+package filevscode;
+import java.util.Scanner;
+public class TugasWaBuamal {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int hasil,angkain0,angka1,angka2,angka3,angka4;
+        System.out.println("Masukkan 5 angka random");
+        angkain0 = in.nextInt();
+        angka1 = in.nextInt();
+        angka2 = in.nextInt();
+        angka3 = in.nextInt();
+        angka4 = in.nextInt();
+        double hasil0;
+
+        hasil = angkain0+angka1+angka2+angka3+angka4;
+        hasil0 = hasil/5;
+        if(hasil0<=60){
+            System.out.println("rata rata anda = "+hasil0+" = nilai anda cukup");
+        }
+        else if(hasil0>60 && hasil0<70){
+            System.out.println(hasil0+" = nilai anda cukup");
+        }
+        else if(hasil0>70 && hasil0<80){
+            System.out.println(hasil+"nilai anda baik");
+        }
+        else if(hasil0>80){
+            System.out.println(hasil0+"nilai anda luar biasa");
+        }
+
+    }
+}
